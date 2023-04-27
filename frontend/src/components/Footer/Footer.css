@@ -1,0 +1,19 @@
+.conteudoFooter {
+    min-width: 410px;
+    background-color: #0086ff;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+  }
+  
+  small > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  small a:hover{
+    text-decoration: underline;
+  }
