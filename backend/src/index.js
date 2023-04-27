@@ -4,7 +4,7 @@ const { conectandoDB } = require("./db/dbHelper");
 
 const userRouter = require("./user/user.router");
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 async function main() {
   await conectandoDB();
@@ -12,7 +12,7 @@ async function main() {
 
   app.use(cors());
   app.use(express.json());
-  app.get("/", (res) => {
+  app.get("/", (req, res) => {
     res.redirect("https://danielribeiro.dev.br/");
   });
 
