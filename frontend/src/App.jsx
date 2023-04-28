@@ -1,10 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer/Footer";
 import Header from "./components/Header/Header"
-import Login from "./components/Main/Login";
-import Home from "./components/Main/Home";
+import Login from "./components/Login/Login";
+import Home from "./components/Home/Home";
+import Register from "./components/Register/Register";
 import './App.css'
-{/*import * as firebase from "firebase/app"
+/*import * as firebase from "firebase/app"
 import * as firebaseAuth from "firebase/auth"
 
 const firebaseConfig = {
@@ -24,7 +25,7 @@ const auth = firebaseAuth.initializeAuth(appFirebase);
 firebaseAuth.signInWithEmailAndPassword(
   auth, "daniel@teste.com", "idiubs#vyv@1787"
 ).then(user => console.log(user))
-.catch(error => console.log("error", error));*/}
+.catch(error => console.log("error", error));*/
 
 function App() {
   return (
@@ -36,10 +37,10 @@ function App() {
       <main>
         <div className="content">
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Login />} />
             <Route path="/home" element={<Home />} />
-            {/*<Route path="/novoCard" element={<CardCriar />} />
-            <Route path="/cardEditarRemover/:id" element={<CardPorId />} />
+            <Route path="/register" element={<Register />} />
+            {/*<Route path="/cardEditarRemover/:id" element={<CardPorId />} />
             <Route path="/cardEditar/:id" element={<CardEditar />} />*/}
           </Routes>
         </div>
