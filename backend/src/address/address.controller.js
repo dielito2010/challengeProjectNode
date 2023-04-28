@@ -24,11 +24,7 @@ const addressId = async (req, res) => {
 const createAddress = async (req, res) => {
   const address = req.body;
   if (  !address ||
-        !address.cep ||
-        !address.logradouro ||
-        !address.bairro ||
-        !address.localidade ||
-        !address.uf
+        !address.cep
      ) {
     return res.status(400).send({ message: "Dados inválidos, favor verificar!" });
   }
