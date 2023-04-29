@@ -45,34 +45,46 @@ Mongo conectado com sucesso!
 Servidor rodando na porta: 3000 
 ```
 
-abra a pasta do projeto bemol_challenge e procure o arquivo index.html
-na pasta frontend e execulte esse arquivo com seu navegador preferido...
+abra a pasta do projeto bemol_challenge entre na pasta frontend,
+procure o arquivo index.html e execulte esse arquivo no navegador de sua preferência.
 
 testes:
 
 1 - Tente fazer login
+
 2 - Tente fazer um cadastro
+
 3 - Tente fazer o logout
+
 
 ### 🔩 Analise os testes de ponta a ponta
 
 Os campos estão fazendo todas as validações corretamente?
 
-CEP válidos,
-Emails válidos,
+CEP válidos?
+
+Emails válidos?
+
 Senhas válidas?
 
-### ⌨️ E testes de estilo de codificação
 
 ## 📦 Implantação
 
 A API de backend precisa estar rodando em um computador ou em servidor na nuvem,
-o frontend basta ter o projeto e executar no navegador
+o frontend basta ter o projeto no seu dispositivo e executar diretamente no navegador.
 
 ## 🛠️ Construído com
 
-* [node](https://nodejs.org/) - O motor javascript
-* [nodexpresse](https://expressjs.com/pt-br/) - framework para aplicativo da web do Node.js
+* HTML5, CSS3 e JAVASCRIPT vanilla
+* [node](https://nodejs.org/) - O motor javascript para backend.
+* [express](https://expressjs.com/pt-br/) - framework para aplicativo da web do Node.js
+* [mongoDB](https://www.mongodb.com/) - Banco de daddos não relacional para salvar dados de usuário na nuvem.
+* [bootstrap](https://getbootstrap.com/) - framework para estilizar páginas e componentes web.
+* [jquery](https://jquery.com/) - biblioteca para manipulação de documentos HTML e manipulação de eventos.
+* [ajax](https://api.jquery.com/Jquery.ajax/) - modelo que comtempla várias tecnologias web.
+* [mongoose]https://mongoosejs.com/) - solução e baseada em esquemas para modelar dados para aplicativo usando mongoDB.
+* [firebase](https://firebase.google.com/?hl=pt-br) - plataforma de desenvolvimento, usei para gerenciar altenticações.
+* [viacep](https://viacep.com.br/) - API web para buscar e validar ceps.
 
 
 ## 📌 Versão
