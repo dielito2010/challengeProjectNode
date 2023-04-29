@@ -24,7 +24,8 @@ const addressId = async (req, res) => {
 const createAddress = async (req, res) => {
   const address = req.body;
   if (  !address ||
-        !address.cep
+        !address.cep ||
+        !address.numero
      ) {
     return res.status(400).send({ message: "Dados inválidos, favor verificar!" });
   }

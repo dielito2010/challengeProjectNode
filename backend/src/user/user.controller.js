@@ -28,19 +28,20 @@ const createUser = async (req, res) => {
     !user.firstName ||
     !user.lastName ||
     !user.email ||
-    !user.address
+    !user.cep ||
+    !user.numero
   ) {
     return res.status(400).send({
       message: "Dados inválidos ou dados obrigatórios não informados!",
     });
   }
 
-  const address = req.body;
-  const addressId = address.address;
-  const getId = await serviceAddress.addressId(addressId);
-  if (!getId) {
-    return res.status(404).send({ message: "Endereço não encontrado!" });
-  }
+  // const address = req.body;
+  // const addressId = address.address;
+  // const getId = await serviceAddress.addressId(addressId);
+  // if (!getId) {
+  //   return res.status(404).send({ message: "Endereço não encontrado!" });
+  // }
 
   const newUser = await service.createUser(user);
 
@@ -59,7 +60,8 @@ const updateUser = async (req, res) => {
     !user.firstName ||
     !user.lastName ||
     !user.email ||
-    !user.address
+    !user.cep ||
+    !user.numero
   ) {
     return res.status(400).send({
       message: "Dados inválidos ou dados obrigatórios não informados!",

@@ -4,8 +4,7 @@ const ObjectId = require("mongoose").Types.ObjectId;
 
 const allUsers = () => {
   return User.find()
-    .select("firstName lastName email")
-    .populate("address")
+    .select("firstName lastName email cep numero")
     .sort({ _id: -1 });
 };
 
