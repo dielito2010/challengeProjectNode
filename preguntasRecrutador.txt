@@ -1,0 +1,16 @@
+1. A solução deve ser disponibilizada em Cloud ou On-premise? 
+R- Cloud.
+
+2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, 
+responda qual ferramenta acreditas ser apropriada para o controle de tarefas da equipe, 
+a ferramenta é ágil?
+R- Kamban usando o trello, é agil.
+
+3. Você se sente capaz de liderar esta equipe? Por quê?
+R- Sinto-me capaz porque a solução é minha, eu sou o dono, e também porque já atuei como analista liderando uma equipe de 5 devs, porém, não tenho ambição em cargos de gestão.
+
+4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
+R- Mudar o frontend para React.JS ou TS e criar um app, não fiz porque não deu tempo.
+
+5. Acha válido esse desafio para o processo que está participando?
+R- Bastante válido, bem interessante.
