@@ -2,7 +2,7 @@
 
 ## 🚀 Começando
 
-Faça o clone do projeto que está no githube
+Faça o clone do projeto que está no github
 
 no seu terminal digite:
 
@@ -58,9 +58,9 @@ testes:
 
 Os campos estão fazendo todas as validações corretamente?
 
-CEP válidos
-Emails válidos
-Senhas válidas
+CEP válidos,
+Emails válidos,
+Senhas válidas?
 
 ### ⌨️ E testes de estilo de codificação
 
@@ -71,13 +71,9 @@ o frontend basta ter o projeto e executar no navegador
 
 ## 🛠️ Construído com
 
-Mencione as ferramentas que você usou para criar seu projeto
-
 * [node](https://nodejs.org/) - O motor javascript
+* [nodexpresse](https://expressjs.com/pt-br/) - framework para aplicativo da web do Node.js
 
-## 🖇️ Colaborando
-
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
 
 ## 📌 Versão
 
@@ -86,7 +82,9 @@ Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoS
 ## ✒️ Autores
 
 Daniel Antunes Ribeiro
+
 https://danielribeiro.dev.br/
+
 https://www.linkedin.com/in/daniel-antunes-ribeiro/
 
 ## 📄 Licença
