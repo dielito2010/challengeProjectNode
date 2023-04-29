@@ -6,15 +6,17 @@ Faça o clone do projeto que está no github
 
 no seu terminal digite:
 
+```
 git clone https://github.com/dielito2010/bemol_challenge.git
+```
 
 ### 📋 Pré-requisitos
 
 Node e NPM, verifique qual o seu sistema operacional e instale de acordo...
 
-```
+
 https://nodejs.org/en/download
-```
+
 
 ### 🔧 Instalação
 
@@ -77,7 +79,9 @@ o frontend basta ter o projeto no seu dispositivo e executar diretamente no nave
 
 ## 🛠️ Construído com
 
-* HTML5, CSS3 e JAVASCRIPT vanilla
+* [html5](https://www.w3schools.com/html/) - HTML5
+* [css3](https://www.w3schools.com/Css/) - CSS3
+* [javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - JavaScript Vanilla
 * [node](https://nodejs.org/) - O motor javascript para backend.
 * [express](https://expressjs.com/pt-br/) - framework para aplicativo da web do Node.js
 * [mongoDB](https://www.mongodb.com/) - Banco de dados não relacional para salvar dados de usuário na nuvem.
