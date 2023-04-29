@@ -1,0 +1,51 @@
+@startuml   
+
+!define C4PUML https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Container.puml
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Component.puml
+
+title Diagrama c4model do projeto Bemol Challenge
+
+!define AUTH_URL https://firebase.google.com/docs/auth
+!define DATABASE_URL https://www.mongodb.com/cloud/atlas/
+!define CEP_URL https://viacep.com.br/
+
+Person(client, "Usuário")
+
+Container(firebase, "Firebase", "Plataforma de desenvolvimento de aplicativos móveis e da web", "") {
+    Component(auth, "Firebase Authentication", "Serviço de autenticação de usuários", "") {
+        Component(authui, "UI para Firebase Authentication", "Interface de usuário para Firebase Authentication", "Firebase Authentication UI")
+    }
+}
+
+Container(node, "Node.js", "Servidor Node.js", "") {
+    Container(api, "API", "API RESTful para acessar dados do usuário", "Express.js") {
+        Component(router, "Router", "Roteador da API", "Express.js")
+        Component(controller, "Controller", "Controlador da API", "JavaScript")
+        Component(service, "Serviço", "Serviço de comunicação com o MongoDB", "JavaScript")
+    }
+}
+
+Container(web, "Web", "Aplicação Web", "") {
+    Component(ui, "Interface do usuário", "Interface do usuário da aplicação web", "index.html") {
+        Component(login, "Tela de login", "Tela de login da aplicação web", "JavaScript")
+    }
+}
+
+Container(MongoDB, "Servidor Cloud", "Banco de dados"){
+    Component(mongodb, "MongoDB", "Banco de dados não relacional", "MongoDB")
+}
+
+Container(ViaCep, "API de CEPs", "Busca, valida e envia Ceps"){
+    Component(callback, "Função de retorno", "Recebe uma URL e devolve um JSON")
+}
+
+Rel(client, web, "Interage com", "Acessa interfaçe Web")
+Rel(login, node, "Interage com", "HTTPS")
+Rel(router, controller, "Usa", "")
+Rel(controller, service, "Usa", "")
+Rel(service, MongoDB, "Interage com", DATABASE_URL)
+Rel(login, authui, "Usa", AUTH_URL)
+Rel(login, ViaCep, "Interage com", CEP_URL)
+
+@enduml

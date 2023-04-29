@@ -1,16 +1,21 @@
 1. A solução deve ser disponibilizada em Cloud ou On-premise? 
-R- Cloud.
+R- Cloud. A maioria das aplicações hoje me dia usa nuvem por ser muito mais barato manter a infraestrutura para ambientes de T.I  
 
 2. Considerando a participação de 4 pessoas técnicas para o desenvolvimento dessa solução, 
 responda qual ferramenta acreditas ser apropriada para o controle de tarefas da equipe, 
 a ferramenta é ágil?
-R- Kamban usando o trello, é agil.
+R- Metodologia Scrum com a Daily e usano a ferramenta Kamban, gosto do trello, essa etodologia funciona bem e é agil.
 
 3. Você se sente capaz de liderar esta equipe? Por quê?
-R- Sinto-me capaz porque a solução é minha, eu sou o dono, e também porque já atuei como analista liderando uma equipe de 5 devs, porém, não tenho ambição em cargos de gestão.
+R- Sinto-me capaz porque a solução é minha, eu sou o dono  (Product Owner), e também porque já atuei como analista
+liderando demandas com uma equipe de 5 devs, porém, não tenho ambição em cargos de gestão, somente em cargos técnicos.
 
 4. Se pudesse sugerir uma melhoria, mudança ou oportunidade. O que seria?
-R- Mudar o frontend para React.JS ou TS e criar um app, não fiz porque não deu tempo.
+R- Melhorar o backend, inclusive o código para TypeScript, mudar o frontend para React e criar um app,
+não fiz porque não deu tempo, com mais tempo se faz melhor com certeza, porém, respeito muito os prazos
+e deixei a aplicação funcional para apreciação.
 
 5. Acha válido esse desafio para o processo que está participando?
-R- Bastante válido, bem interessante.
+R- Bastante válido, bem interessante o desafio, não usei códigos prontos de outra aplicação, construi do zero absoluto!
+Usei o máximo de tecnologias possíveis para retratar algumas das minhas habilidades como desenvolvedor e optei por
+JavaScript porque é uma linguagem de requisito para a vaga.
