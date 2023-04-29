@@ -87,7 +87,7 @@ $(document).ready(function () {
       data: JSON.stringify(data),
       success: function (response) {
         alert("Cadastro bem sucedido!");
-        window.location.href = "/home.html";
+        window.location.href = "./home.html";
       },
       error: function (error) {
         alert("Erro ao cadastrar, verifique a conexão com a API...");

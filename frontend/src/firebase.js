@@ -27,7 +27,7 @@ document
       .signInWithEmailAndPassword(email, password)
       .then(function (user) {
         alert("Login bem sucedido");
-        window.location.href = "/home.html";
+        window.location.href = "./home.html";
       })
       .catch(function (error) {
         alert("EMAIL ou SENHA inválidos, verifique...");
@@ -41,7 +41,7 @@ function checkIfEmailExists(email) {
     .then(function (signInMethods) {
       if (signInMethods.length > 0) {
         alert("O email já está cadastrado:", signInMethods);
-        window.location.href = "/index.html";
+        window.location.href = "./index.html";
         return true;
       } else {
         return false;
@@ -66,7 +66,7 @@ document
       .createUserWithEmailAndPassword(email, password)
       .then(function (user) {
         alert("Login bem sucedido");
-        window.location.href = "/home.html";
+        window.location.href = "./home.html";
       })
       .catch(function (error) {
         alert("EMAIL ou SENHA inválidos, verifique...");
@@ -75,7 +75,7 @@ document
 
 firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
-    window.location.href = "/home.html";
+    window.location.href = "./home.html";
   }
 });
 
@@ -84,7 +84,7 @@ function logout() {
     .auth()
     .signOut()
     .then(() => {
-      window.location.href = "/index.html";
+      window.location.href = "./index.html";
     })
     .catch(() => {
       alert("Erro ao fazer logout");
